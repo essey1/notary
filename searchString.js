@@ -171,7 +171,7 @@ uploadForm.addEventListener('submit', e => {
     formData.append("inpFile", inpFile.files[0]);
 
     fetch(endpoint, {
-        method: "post",
-        body: formData
+        method: "POST",
+        body: formData,
     }).catch(console.error);
 });
